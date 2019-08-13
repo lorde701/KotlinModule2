@@ -6,7 +6,7 @@ val question1 = """Какая столица Португалии?
         |3. Рим
         |4. Прага
     """.trimMargin()
-val correctAnswer1 = 2
+const val correctAnswer1 = 2
 
 val question2 = """Какая столица Мальта?
         |1. Абуджа
@@ -14,7 +14,7 @@ val question2 = """Какая столица Мальта?
         |3. Пекин
         |4. Валлетта
     """.trimMargin()
-val correctAnswer2 = 4
+const val correctAnswer2 = 4
 
 val question3 = """Какая столица Эстонии?
         |1. Богота
@@ -22,7 +22,7 @@ val question3 = """Какая столица Эстонии?
         |3. Таллин
         |4. Багдад
     """.trimMargin()
-val correctAnswer3 = 3
+const val correctAnswer3 = 3
 
 val question4 = """Какая столица Грузии?
         |1. Тбилиси
@@ -30,7 +30,7 @@ val question4 = """Какая столица Грузии?
         |3. Эль-Кувейт
         |4. Дамаск
     """.trimMargin()
-val correctAnswer4 = 1
+const val correctAnswer4 = 1
 
 val question5 = """Какая столица Австрии?
         |1. Осло
@@ -38,7 +38,7 @@ val question5 = """Какая столица Австрии?
         |3. Душанбе
         |4. Любляна
     """.trimMargin()
-val correctAnswer5 = 2
+const val correctAnswer5 = 2
 
 fun main(args: Array<String>) {
     println("Ответьте на несколько вопросов (необходимо вводить номер правильного ответа)")
@@ -68,7 +68,7 @@ fun checkAnswer(questionNumber: Int, questionWithAnswers: String, correctAnswer:
         |Вопрос №$questionNumber
         |$questionWithAnswers
     """.trimMargin())
-    var userAnswer: Int = 0
+    var userAnswer = 0
     try {
         userAnswer = readLine()!!.toInt()
     } catch (e: NumberFormatException){
