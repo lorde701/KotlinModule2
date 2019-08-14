@@ -70,7 +70,7 @@ fun checkAnswer(questionNumber: Int, questionWithAnswers: String, correctAnswer:
     """.trimMargin())
     var userAnswer = 0
     try {
-        userAnswer = readLine()!!.toInt()
+        userAnswer = readLine().toString().toInt()
     } catch (e: NumberFormatException){
         println("Было введено не число")
     }
