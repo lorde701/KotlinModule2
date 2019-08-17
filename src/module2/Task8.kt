@@ -3,7 +3,7 @@
 
 fun main(array: Array<String>) {
     println("Введите сумму вклада")
-    val depositAmount: Double?
+    val depositAmount: Double
     try {
         depositAmount = readLine().toString().replace(",", ".").toDouble()
     } catch (e: NumberFormatException) {
@@ -12,16 +12,16 @@ fun main(array: Array<String>) {
     }
 
     println("Введите длительность вклада в месяцах")
-    val depositDuration: Int?
+    val depositDuration: Int
     try {
-        depositDuration = readLine()!!.toInt()
+        depositDuration = readLine().toString().toInt()
     } catch (e: NumberFormatException) {
         println("Длительность вклада должна быть числом")
         return
     }
 
     println("Введите процент по вкладу")
-    val percent: Double?
+    val percent: Double
     try {
         percent = readLine().toString().replace(",", ".").toDouble()
     } catch (e: NumberFormatException) {

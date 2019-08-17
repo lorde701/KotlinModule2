@@ -3,6 +3,9 @@
 
 import java.util.concurrent.TimeUnit
 
+
+
+
 val question1 = """Какая столица Португалии?
         |1. Катманду
         |2. Лиссабон
