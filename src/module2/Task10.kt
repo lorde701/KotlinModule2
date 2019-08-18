@@ -20,7 +20,7 @@ fun main(args: Array<String>) {
     """.trimMargin())
 
         try {
-            val choice = readLine()?.toInt()
+            val choice = readLine().toString().toInt()
             when (choice) {
                 1 -> addCity()
                 2 -> printCities()
